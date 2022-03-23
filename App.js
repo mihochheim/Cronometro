@@ -6,7 +6,7 @@ let ss = 0;
 let mm = 0;
 let hh = 0;
 
-export default function App() {
+function App() {
   const [number, setNumber] = useState();
   const [button, setButton] = useState('GO');
   const [last, setLast] = useState(null);
@@ -60,7 +60,7 @@ export default function App() {
     }
 
     setLast(number);
-    setNumber(0);
+    setNumber();
     ss = 0;
     mm = 0;
     hh = 0;
@@ -104,7 +104,7 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: '#DDA0DD'
+    backgroundColor: '#9932CC'
   },
   timer: {
     marginTop: -160,
@@ -129,7 +129,7 @@ const styles = StyleSheet.create({
   btnTexto: {
     fontSize: 20,
     fontWeight: 'bold',
-    color: '#DDA0DD'
+    color: '#9932CC'
   },
   areaUltima: {
     marginTop: 40,
@@ -140,3 +140,5 @@ const styles = StyleSheet.create({
     fontWeight: 'bold'
   }
 })
+
+export default App;
